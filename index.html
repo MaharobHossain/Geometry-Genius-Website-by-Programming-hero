@@ -9,28 +9,39 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="m-8">
 
     <header>
 
     </header>
 
     <main>
-        <div>
+            <!-- main content container -->
+        <div class="flex flex-col md:flex-row">
             <!-- shape card container -->
-            <div>
-                <!-- card 1 -->
-                <div class="card bg-base-100 w-96 shadow-sm">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+
+                <!-- Triangle card  -->
+                <div class="card bg-base-100 w-96 shadow-sm text-center">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src="images/triangle.png"
+                        alt="Triangle" />
                     </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Card Title</h2>
-                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                    <div class="card-body text-center">
+                      <h2 class="font-semibold text-2xl">Triangle</h2>
+                      <p class="text-[#414141]">Area (A) = 0.5 X b X h</p>
+
+                     <div class="">
+                        <input class="w-24 text-xl p-1 rounded" type="text" placeholder="b">
+                        <span class="text-xl mx-3">cm</span>
+                        <input class="w-24 text-xl p-1 rounded" type="text" placeholder="h">
+                        <span class="text-xl mx-3">cm</span>
+                     </div>
+
+                      <div class="card-actions ">
+                        <button class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -77,8 +88,8 @@
 
             </div>
             <!-- area calculation container -->
-            <div class="w-96">
-                <h3 class="text-3xl">Area Calculation</h3>
+            <div class="w-96 border-2 border-gray-700 rounded-md">
+                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
             </div>
         </div>
     </main>
