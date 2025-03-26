@@ -22,26 +22,25 @@
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
 
-                <!-- Triangle card  -->
+                <!-- Triangle card -->
                 <div class="card bg-base-100 w-96 shadow-sm text-center">
                     <figure>
                       <img
-                        src="images/triangle.png"
-                        alt="Triangle" />
+                        src="images/triangle.png" alt="Triangle" />
                     </figure>
                     <div class="card-body text-center">
                       <h2 class="font-semibold text-2xl">Triangle</h2>
                       <p class="text-[#414141]">Area (A) = 0.5 X b X h</p>
 
                      <div class="">
-                        <input class="w-24 text-xl p-1 rounded" type="text" placeholder="b">
+                        <input id="triangle-base" class="w-24 text-xl p-1 rounded" type="text" placeholder="b">
                         <span class="text-xl mx-3">cm</span>
                         <input class="w-24 text-xl p-1 rounded" type="text" placeholder="h">
                         <span class="text-xl mx-3">cm</span>
                      </div>
 
                       <div class="card-actions ">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -93,6 +92,10 @@
             </div>
         </div>
     </main>
+
+
+
+    <script src="script/triangle.js"></script>
     
 </body>
 </html>
