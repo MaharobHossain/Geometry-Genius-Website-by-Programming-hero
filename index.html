@@ -62,7 +62,7 @@
                       <p class="text-[#414141] p-0">Area (A) = W  X  I</p>
 
                       <div class="">
-                        <input id="" class="w-14 text-xl rounded" type="text" placeholder="w">
+                        <input id="rectangle-length" class="w-14 text-xl rounded" type="text" placeholder="w">
                         <span class="text-lg mx-2">cm</span>
                         <input id="" class="w-14 text-xl rounded" type="text" placeholder="I">
                         <span class="text-lg mx-2">cm</span>
@@ -76,7 +76,7 @@
 
 
                       <div class="card-actions ">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -122,6 +122,8 @@
 
 
             </div>
+
+
             <!-- area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-md">
                 <h3 class="text-3xl text-center p-4">Area Calculation</h3>
@@ -132,6 +134,7 @@
 
 
     <script src="script/triangle.js"></script>
+    <script src="script/rectangle.js"></script>
     
 </body>
 </html>
