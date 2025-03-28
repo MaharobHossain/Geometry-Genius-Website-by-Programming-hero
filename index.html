@@ -113,21 +113,41 @@
                       </div>
 
 
-                    <!-- card 4 -->
-                <div class="card bg-base-100 shadow-sm">
-                    <figure>
-                      <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Card Title</h2>
-                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+
+
+
+
+                      
+                     <!-- Rhombus card --> 
+                     <div class="card bg-base-100 shadow-sm border border-gray-300 text-center">
+                        <figure class="px-5 pt-5 ">
+                          <img src="images/rhombus.png" alt="Rhombus Image" />
+                        </figure>
+                        <div class="card-body text-center ">
+                          <h2 class="font-semibold text-2xl pt-4">Rhombus</h2>
+                          <p class="text-[#414141] p-0">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+    
+                          <div class="">
+                            <input id="rhombus-width" class="w-14 text-xl rounded" type="text" placeholder="d1">
+                            <span class="text-lg mx-2">cm</span>
+                            <input id="rhombus-height" class="w-14 text-xl rounded" type="text" placeholder="d2">
+                            <span class="text-lg mx-2">cm</span>
+                         </div>
+    
+    
+                         <div class="text-xl text-[#414141]">
+                            <p >Area: <span id="parallelogram-area"></span> <span>cm<sup>2</sup></span></p>
+                         </div>
+    
+    
+    
+                          <div class="card-actions ">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+
+
 
 
                  
