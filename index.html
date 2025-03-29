@@ -30,7 +30,7 @@
                     </figure>
                     <div class="card-body text-center">
                       <h2 class="font-semibold text-2xl">Triangle</h2>
-                      <p class="text-[#414141]">Area (A) = 0.5 X b X h</p>
+                      <p class="text-[#414141]">Area (A) = 0.5 × b × h</p>
 
                      <div class="">
                         <input id="triangle-base" class="w-14 text-xl rounded" type="text" placeholder="b">
@@ -59,7 +59,7 @@
                     </figure>
                     <div class="card-body text-center ">
                       <h2 class="font-semibold text-2xl pt-4">Rectangle</h2>
-                      <p class="text-[#414141] p-0">Area (A) = W  X  I</p>
+                      <p class="text-[#414141] p-0">Area (A) = W  ×  I</p>
 
                       <div class="">
                         <input id="rectangle-length" class="w-14 text-xl rounded" type="text" placeholder="w">
@@ -90,7 +90,7 @@
                         </figure>
                         <div class="card-body text-center ">
                           <h2 class="font-semibold text-2xl pt-4">Parallelogram</h2>
-                          <p class="text-[#414141] p-0">Area (A) = b X h</p>
+                          <p class="text-[#414141] p-0">Area (A) = b × h</p>
     
                           <div class="">
                             <input id="parallelogram-width" class="w-14 text-xl rounded" type="text" placeholder="b">
@@ -125,7 +125,7 @@
                         </figure>
                         <div class="card-body text-center ">
                           <h2 class="font-semibold text-2xl pt-4">Rhombus</h2>
-                          <p class="text-[#414141] p-0">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                          <p class="text-[#414141] p-0">Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub></p>
     
                           <div class="">
                             <input id="rhombus-Diagonal1" class="w-14 text-xl rounded" type="text" placeholder="d1">
@@ -161,7 +161,7 @@
                         </figure>
                         <div class="card-body text-center ">
                           <h2 class="font-semibold text-2xl pt-4">Pentagon</h2>
-                          <p class="text-[#414141] p-0">Area (A) = 0.5 x p x b</p>
+                          <p class="text-[#414141] p-0">Area (A) = 0.5 × p × b</p>
     
                           <div class="">
                             <input id="pentagon-height" class="w-14 text-xl rounded" type="text" placeholder="p">
@@ -178,6 +178,41 @@
     
                           <div class="card-actions ">
                             <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+                    <!-- Ellipse Card --> 
+                    <div class="card bg-base-100 shadow-sm border border-gray-300 text-center">
+                        <figure class="px-5 pt-5 ">
+                          <img src="images/ellipse.png" alt="Ellipse Image" />
+                        </figure>
+                        <div class="card-body text-center ">
+                          <h2 class="font-semibold text-2xl pt-4">Ellipse</h2>
+                          <p class="text-[#414141] p-0">Area (A) = πab (π×a×b)</p>
+    
+                          <div class="">
+                            <input id="ellipse-semi-major-axis" class="w-14 text-xl rounded" type="text" placeholder="a">
+                            <span class="text-lg mx-2">cm</span>
+                            <input id="ellipse-semi-minor-axis" class="w-14 text-xl rounded" type="text" placeholder="b">
+                            <span class="text-lg mx-2">cm</span>
+                         </div>
+    
+    
+                         <div class="text-xl text-[#414141]">
+                            <p >Area: <span id="ellipse-area"></span> <span>cm<sup>2</sup></span></p>
+                         </div>
+    
+    
+                          <div class="card-actions ">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                           </div>
                         </div>
                       </div>
